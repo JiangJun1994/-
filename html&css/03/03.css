@@ -1,0 +1,45 @@
+#content{
+  background: #eee;
+  border:1px solid gray;
+  /*padding:20px;*/
+  overflow: hidden;
+}
+#title{
+  width:200px;
+  border:1px solid gray;
+  float:left;
+  margin:20px;
+
+}
+#title #logo{
+  float:left;
+  padding:20px;
+}
+img{
+  width:80px;
+  height:80px;
+  border:1px solid gray;
+}
+#title #name{
+  float:left;
+}
+
+#introduction{
+  border:1px solid gray;
+  padding:20px;
+  margin-left: 240px;
+  margin-right:160px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#pics{
+  float:right;
+  border:1px solid gray;
+  width:120px;
+  margin:20px;
+}
+
+#pics div{
+  margin:20px;
+}

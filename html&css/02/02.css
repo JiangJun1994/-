@@ -1,0 +1,139 @@
+*{
+  margin:0;
+  padding:0;
+}
+body{
+  background: gray;
+}
+img{  width: 200px;height: 200px }
+.image2{
+  margin:10px 0;
+}
+.content {margin:0px}
+.firstContent{
+  text-indent: 2em;
+}
+.title{margin:0px}
+.body{
+  background:white;
+  border:1px solid gray;
+  margin:20px;
+  padding:20px;
+}
+#header{
+  height:60px;
+  line-height: 60px;
+  overflow: hidden;
+  width:100%;
+  background:#1a1a1a;
+}
+#header ul {
+  float: right;
+}
+#header li{
+  display:inline-block;
+}
+#header li a{
+ text-decoration: none;
+ color:white;
+ font-size: 12px;
+ padding-right:20px;
+}
+h2{
+  height:50px;
+  line-height: 50px;
+  margin-top:10px;
+}
+h4{
+  color:grey;
+  line-height:40px;
+  height:40px;
+}
+h5{
+  color:dimgray;
+  line-height:40px;
+  height:40px;
+}
+#list{
+  list-style-type: none;
+  margin-left:20px;
+}
+.image{
+  width:250px;
+  height:270px;
+  border:1px solid gray;
+  text-align:center;
+  margin-bottom:20px;
+  margin-left:40px;
+}
+.body .title{
+  height:50px;
+  line-height: 50px;
+}
+.body #ranklist{
+  margin:0 0 20px 40px;
+}
+.body table{
+  border:1px solid gray;
+  border-collapse:collapse;
+  width:100%;
+  font-size: 12px;
+  height:25px;
+  line-height: 25px;
+}
+.body table th{
+  background: black;
+  color:white;
+  text-align: left;
+}
+table #total{
+  background:gray;
+  font-weight:700;
+}
+.body #formContent #contentdetail{
+  padding-left:250px;
+  font-size:14px;
+}
+.body #formContent #contentbtn button{
+  font-size:14px;
+  height:40px;
+  background:blue;
+  color:white;
+  margin-top:5px;
+  border-radius: 10px;
+}
+#formContent label{
+  display:inline-block;
+  width:180px;
+  text-align:right;
+  height:35px;
+  line-height:35px;
+  padding-right:15px;
+}
+#formContent p{
+  margin-left:195px;
+  color:gray;
+  margin-bottom:10px;
+}
+#description{
+  vertical-align: top;
+}
+#formContent #desc{
+  width:600px;
+  height:100px;
+}
+#formContent button{
+  padding:0px;
+  width:100%;
+  margin-bottom:-10px;
+}
+#footer{
+  width:100%;
+  background:black;
+  color:white;
+  font-size: 12px;
+  text-align:center;
+  height:60px;
+  line-height: 50px;
+
+}

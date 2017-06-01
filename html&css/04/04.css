@@ -1,0 +1,26 @@
+#main{
+  width:400px;
+  height:200px;
+  background:#eee;
+  position:absolute;
+  left:50%;
+  top:50%;
+  margin-left:-200px;
+  margin-top:-100px;
+}
+#left{
+  background:#fc0;
+  width:50px;
+  height:50px;
+  border-radius: 0 0 100% 0;
+  border:none;
+}
+#right{
+  background:#fc0;
+  width:50px;
+  height:50px;
+  margin-left:350px;
+  margin-top:100px;
+  border-radius: 100% 0 0 0;
+  border:none;
+}

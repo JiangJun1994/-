@@ -1,0 +1,295 @@
+*{
+  padding:0;
+  margin:0;
+}
+#container{
+  width:980px;
+  height:1386px;
+  border:1px solid gray;
+  margin:0 auto;
+}
+#header{
+  position:relative;
+  height:61px;
+  width:892px;
+  margin:0 auto;
+  border-bottom:2px solid #938e8c;
+  overflow:hidden;
+}
+#headerLeft{
+  width:110px;
+  height:61px;
+  background: #d45d5c;
+}
+#headerLeft #innerLeft{
+  position:absolute;
+  bottom:0px;
+  left:5px;
+}
+#headerLeft p{
+  font-size: 12px;
+  color:#ffffff;
+}
+
+#headerRight{
+  position:absolute;
+  bottom:0px;
+  right:0px;
+}
+#headerRight p{
+  font-size: 12px;
+  color:#d45d5c;
+}
+
+#about{
+  margin-top:31px;
+  width:892px;
+  margin-left:44px;
+  overflow: hidden;
+}
+#about #pic{
+  width:641px;
+  height:301px;
+  float:left;
+  background-image: url("pic/1.jpeg");
+  overflow: hidden;
+}
+#pic #picLeft{
+  float:left;
+  width:191px;
+  height:301px;
+  background: green;
+  opacity:0.2;
+}
+#pic #picRight{
+  width:191px;
+  height:301px;
+  background:red;
+  opacity:0.2;
+  float:right;
+}
+
+#aboutContent {
+  width:203px;
+  height:301px;
+  float:right;
+}
+#aboutContent #top{
+  height:2px;
+  width:203px;
+  background:#cc8091;
+}
+#big{
+  width:82px;
+}
+#big p{
+  font-size: 24px;
+  color:#000000;
+}
+#big2{
+  width:160px;
+}
+#big2 p{
+  font-size: 24px;
+  color:#000000;
+}
+#small{
+  width:203px;
+  font-size: 12px;
+  color:#676767;
+}
+#green p{
+  margin-left:-20px;
+  font-size:116px;
+  color:#75b86b;
+  font-family: Microsoft YaHei;
+  font-style: oblique;
+}
+#css{
+  overflow: hidden;
+  margin-top:-20px;
+}
+#number{
+  float:left;
+  font-size:55px;
+  color:#cc8091;
+  font-family: Microsoft YaHei;
+}
+#innercss {
+  float: left;
+  margin-top: 20px;
+}
+#css1{
+  font-size:21px;
+  color:#cc8091;
+}
+#css2{
+  font-size:12px;
+  color:#cc8091;
+}
+#intro{
+  margin-top:31px;
+  font-size: 12px;
+  color:#767777;
+  width:641px;
+  margin-left:44px;
+  overflow: hidden;
+}
+
+#what{
+  width:200px;
+  float:left;
+  margin-right:20px;
+}
+#what div p{
+  color:#418c59;
+  font-size: 16px;
+}
+#what div{
+  width:35px;
+  margin-bottom:5px;
+}
+#when{
+  width:200px;
+  float:left;
+  margin-right:20px;
+}
+#when div p{
+  color:#d2994f;
+  font-size: 16px;
+}
+#when  div{
+  width:37px;
+  margin-bottom:5px;
+}
+#how{
+  width:200px;
+  float:left;
+}
+#how div p{
+  color:#cc7680;
+  font-size: 16px;
+}
+#how  div{
+  width:30px;
+  margin-bottom:5px;
+}
+
+#last{
+  margin-top:40px;
+  margin-bottom:20px;
+}
+#leftPart{
+  width:440px;
+  margin-left:44px;
+  margin-right:12px;
+  float:left;
+}
+#rightPart{
+  float:left;
+  width:440px;
+}
+
+#leftPart #title span{
+  font-size: 72px;
+  color:#f5e327;
+  font-style: oblique;
+  font-weight:800;
+  font-family: SimHei;
+}
+#leftPart #title .title {
+  font-size: 42px;
+  color:#11456b;
+  font-weight:800;
+  font-family: SimHei;
+}
+#leftPart #title .subtitle{
+  font-size: 33px;
+  color:#11456b;
+  font-weight:800;
+  font-family: SimHei;
+}
+#leftContent{
+  margin-top:10px;
+}
+#leftContent p{
+  font-size: 12px;
+  color:#767777;
+  font-family: SimSun;
+}
+#leftContent span{
+  float: left;
+  /*text-transform:uppercase;*/
+  text-align:center;
+  line-height:60px;
+  font-size: 70px;
+  color:#f5e327;
+  font-family: Microsoft YaHei;
+}
+#leftContent .secondPara{
+  text-indent:2em;
+}
+#leftContent img{
+  float:right;
+  width:100px;
+  height:220px;
+  margin:10px 0 10px 10px;
+}
+#rightPart img{
+  width:440px;
+  height:275px;
+}
+
+#rightContent{
+  background:oldlace;
+  margin-top:20px;
+  overflow: hidden;
+}
+#rightContent #rightmaintop{
+  padding:20px;
+}
+#rightmainbottom #picture{
+  width:260px;
+  height:160px;
+  border:1px solid red;
+  float:left;
+  background: #cc7680;
+}
+#rightmainbottomcontent{
+  width: 150px;
+  float:right;
+  padding-right:10px;
+}
+#rightmainbottomcontent p{
+  font-size: 14px;
+  color:#5a5b5b;
+  font-style: oblique;
+  font-family: SimHei;
+  line-height:25px;
+}
+#footer {
+  clear:both;
+  width:892px;
+  margin:0 auto;
+  height:25px;
+  border-bottom:1px solid #938e8c;
+}
+#pictureDetail{
+
+  margin:30px 10px;
+}
+#pictureDetail1 p{
+  float:left;
+  font-size: 110px;
+  color:#ffffff;
+  margin-top:-10px;
+}
+#pictureDetail2{
+  float:right;
+  margin-top:20px;
+
+}
+#pictureDetail2 p{
+  color:#ffffff;
+  margin-left:-10px;
+}
