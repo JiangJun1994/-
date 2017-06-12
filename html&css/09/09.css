@@ -5,34 +5,61 @@
 }
 select{
   -webkit-appearance:none;
-  background:url("./pic/10.png") no-repeat scroll right center transparent;
+  background:url("./pic/10.png") no-repeat scroll right center ;
 }
 #container{
   position:relative;
 }
 #navigation{
   width:100%;
-  height:50px;
+  height:60px;
   background-color:#2a89be ;
+}
+#navigation img{
+  width:50px;
+  height:50px;
+  position:absolute;
+  left:35px;
+  top:8px;
 }
 #navigation div{
   position:absolute;
-  width:300px;
+  width:400px;
+  height:100%;
   right:50px;
+  /*border:1px solid black;*/
 }
 #navigation input{
-  margin-top:15px;
-  margin-right:10px;
-  height:20px;
-  width:230px;
+  margin-top:20px;
+  margin-right:30px;
+  height:25px;
+  width:320px;
   border-radius: 20px;
   border:none;
+
+}
+#navigation div img{
+  width:20px;
+  height:25px;
+  display: inline-block;
+  position:absolute;
+  top:20px;
+  left:10px;
 }
 #navigation button{
   height:20px;
   background-color:#2a89be ;
   color:#fff;
   border:none;
+  /*border:1px solid black;*/
+}
+#navigation button img{
+  width:20px;
+  height:23px;
+  display:inline-block;
+  position:absolute;
+  left:330px;
+  top:22px;
 }
 #sidebar{
   background-color: #2b2e3c;
@@ -208,29 +235,32 @@ li:hover{
   height:60px;
   margin:0 auto;
   margin-top:10px;
-  border:1px solid black;
+  /*border:1px solid black;*/
 }
 #total{
+  clear:both;
   width:90%;
   height:90px;
   margin:0 auto;
   margin-top:20px;
-  border:1px solid black;
+  /*border:1px solid black;*/
 }
 #program{
   width:90%;
   height:360px;
   margin:0 auto;
   margin-top:15px;
-  border:1px solid black;
+  /*border:1px solid black;*/
+  clear:both;
 }
 
 #calender{
   width:90%;
   height:350px;
+  clear:both;
   margin:0 auto;
   margin-top:10px;
-  border:1px solid black;
+  /*border:1px solid black;*/
 }
 #search{
   color:#938e8c;
@@ -268,7 +298,7 @@ li:hover{
   border:1px solid #d0d0d0;
 }
 #deal{
-  width:120px;
+  width:123px;
   height:25px;
   margin-top:5px;
   border:1px solid #d0d0d0;
@@ -302,8 +332,390 @@ li:hover{
   position:relative;
   top:-15px;
 }
+#money div {
+  float:left;
+}
 .money{
   width:110px;
   height:60px;
   background-color: #ffffff;
+  border:1px solid #e2e2e2;
+  margin-left:4px;
+  text-align:center;
+  border:1px solid #e2e2e2;
+}
+#money .timer{
+  margin-top:10px;
+}
+#money  .dollar{
+  font-size:22px;
+  /*font-weight:bold;*/
+  color:#ef8b49;
+}
+#money .dollarImg{
+  display:inline-block;
+  width:10px;
+  height:12px;
+  /*border:1px solid black;*/
+  margin-right:-5px;
+}
+.direction{
+  width:30px;
+  height:60px;
+  background-color: #ffffff;
+  border:1px solid #e2e2e2;
+}
+.direction img{
+  width:10px;
+  height:20px;
+  margin-left:10px;
+  margin-top:20px;
+}
+.directionRight{
+  margin-left:4px;
+}
+.history{
+  width:145px;
+  height:60px;
+  text-align:center;
+  background-color: #ffffff;
+  border:1px solid #d0d0d0;
+  margin-left:4px;
+}
+.history img{
+  width:30px;
+  height:30px;
+  vertical-align: middle;
+}
+.history span{
+  display:inline-block;
+  height:60px;
+  line-height:60px;
+  vertical-align: middle;
+}
+#total .totalContent{
+  background-color: #ffffff;
+  border:1px solid #d0d0d0;
+  width:201px;
+  height:70px;
+  float:left;
+}
+#total #totalContent div:nth-child(1){
+  border-left: 4px solid #49b191;
+}
+#total #totalContent div:nth-child(2){
+   border-left: 4px solid #3d8bbf;
+ }
+#total #totalContent div:nth-child(3){
+  border-left: 4px solid #ce4b3b;
+}
+#total #totalContent div:nth-child(4){
+  border-left: 4px solid #e1cc52;
+}
+#total .totalContent1{
+  margin-left:30px;
+}
+#total .totalContent2{
+  margin-left:30px;
+  margin-right:30px;
+}
+/*#totalContent .totalContent span:nth-child(1){*/
+  /*!*border:1px solid black;*!*/
+  /*display:inline-block;*/
+  /**/
+/*}*/
+.dealNum{
+  display:inline-block;
+  padding-left:10px;
+  /*border:1px solid black;*/
+  vertical-align: middle;/*没有这个值，左右两块没有垂直居中对齐*/
+  margin-top:13px
+}
+#totalContent .totalContent span:nth-child(2){
+  display:inline-block;
+  width:60px;
+  height:45px;
+  vertical-align: middle;
+  margin-left:70px;
+  margin-top:13px;
+}
+#totalContent .totalContent .box1{
+  background-color: #49b191;
+}
+#totalContent .totalContent .box2{
+  background-color: #3d8bbf;
+}
+#totalContent .totalContent .box3{
+  background-color:#ce4b3b;
+}
+#totalContent .totalContent .box4{
+  background-color: #e1cc52;
+}
+.programLeft{
+  width:540px;
+  height:100%;
+  border:1px solid #d0d0d0;
+  background-color: #ffffff;
+  float:left;
+}
+.programcontent{
+  margin:0 auto;
+  margin-left:20px;
+  margin-top:15px;
+}
+
+.programcontent button{
+  /*display: inline-block;*/
+  width:85px;
+  height:25px;
+  -webkit-appearance:none;
+  border:none;
+  background-color: #ededef;
+}
+.programtable{
+  width:500px;
+  height:250px;
+  margin-left:20px;
+  /*background-color: red;*/
+  border:1px solid #d0d0d0;
+}
+.programtable div{
+  text-align: center;
+  padding-top:30px;
+  margin-left:35px;
+  border:black;
+
+}
+.programtable div table{
+  border-collapse: collapse;
+
+}
+.programtable div table tbody tr td{
+  width:100px;
+  height:28px;
+  border:1px solid #d0d0d0;
+  font-size:13px;
+}
+.programRight{
+  width:360px;
+  height:100%;
+  border:1px solid #d0d0d0;
+  background-color: #ffffff;
+  float:left;
+  margin-left:10px;
+}
+.programHeader{
+  height:40px;
+  width:100%;
+  background-color: #f4f5f7;
+  color:#bababa;
+}
+.programRightContent{
+  width:280px;
+  border-bottom: 1px solid #d0d0d0;
+  margin:0 auto;
+  margin-top:15px;
+  padding-bottom:5px;
+}
+.programRightContent2{
+  width:320px;
+  border-bottom: 1px solid #d0d0d0;
+  height:45px;
+  margin-left:41px;
+}
+#price{
+  display: inline-block;
+  width:95px;
+  border-right:1px solid #d0d0d0;
+  height:100%;
+  padding-left:10px;
+}
+#responsible{
+  display: inline-block;
+  padding-left:5px;
+}
+.programRightContent3{
+  width:280px;
+  height:145px;
+  border-bottom: 1px solid #d0d0d0;
+  margin:0 auto;
+}
+.programRightContent4{
+  width:280px;
+  margin:0 auto;
+}
+.programRightContent4 span{
+  display: inline-block;
+  margin-top:5px;
+}
+.programRightContent4 span button{
+  margin-left:130px;
+  width:50px;
+  height:25px;
+  background-color: #3d8bbf;
+  border:none;
+  color:#ffffff;
+
+}
+.programHeader p{
+  padding-left:20px;
+  font-size:14px;
+  height:40px;
+  line-height:40px;
+}
+.calenderLeft{
+  width:360px;
+  height:100%;
+  border:1px solid #d0d0d0;
+  background-color: #ffffff;
+  float:left;
+}
+.calenderRight{
+  width:540px;
+  height:100%;
+  border:1px solid #d0d0d0;
+  background-color: #ffffff;
+  float:left;
+  margin-left:10px;
+}
+.calenderHeader{
+  height:40px;
+  width:100%;
+  background-color: #f4f5f7;
+  color:#bababa;
+}
+.calenderHeader p{
+  padding-left:20px;
+  font-size:14px;
+  height:40px;
+  line-height:40px;
+}
+.detailTime{
+  font-size: 12px;
+  padding-left:20px;
+  margin-top:10px;
+}
+#year{
+  -webkit-appearance:none;
+  border:1px solid #d0d0d0;
+  width:60px;
+  height:20px;
+}
+#month{
+  -webkit-appearance:none;
+  border:1px solid #d0d0d0;
+  width:85px;
+  height:20px;
+  margin-left:7px;
+}
+#focus{
+  width:60px;
+  height:20px;
+  margin-left:7px;
+  font-size:12px;
+  -webkit-appearance:none;
+  background-color:#ffffff;
+  border:1px solid #d0d0d0;
+}
+#detail{
+  /*appearance:none;*/
+  -moz-appearance:none;/*怎样清除select默认样式？ */
+  -webkit-appearance:none;
+  border:1px solid #d0d0d0;
+  width:20px;
+  height:20px;
+  margin-left:-3px;
+}
+#return{
+  -webkit-appearance:none;
+  background-color:#ffffff;
+  border:1px solid #d0d0d0;
+  width:70px;
+  height:20px;
+  margin-left:7px;
+  font-size:12px;
+}
+.calenderDetail{
+  width:322px;
+  height:250px;
+  /*border:1px solid black;*/
+  margin-left:20px;
+  margin-top:10px;
+}
+.calenderDetail table{
+  width:100%;
+  height:100%;
+  /*border:1px solid black;*/
+  border-collapse: collapse;
+}
+.calenderDetail table thead tr td{
+  font-size:12px;
+  width:46px;
+  height:30px;
+  text-align:center;
+  border:none;
+  border-top:1px solid #82caed;
+  border-bottom:1px solid #d0d0d0;
+}
+.calenderDetail table tbody tr td{
+  text-align:center;
+  border:none;
+}
+.calenderDetail table tbody tr td span{
+  font-size:12px;
+}
+
+.cars table{
+  width:450px;
+  height:270px;
+  border:1px solid black;
+  border-collapse: collapse;
+  margin:0 auto;
+  margin-top:20px;
+}
+.cars table thead tr td{
+  font-weight:700;
+}
+.cars table th,table td{
+  border:1px solid #d0d0d0;
+}
+.cars table tbody tr:nth-child(1):hover{
+  background-color: #f4f5f7;
+}
+.cars table thead tr td:nth-child(1){
+  width:65px;
+}
+.cars table thead tr td:nth-child(2){
+  width:90px;
+}
+.cars table thead tr td:nth-child(-n+2){
+  text-align:center;
+}
+.cars table thead tr td:nth-child(3){
+  padding-left:30px;
+}
+.cars table tbody tr td:nth-child(-n+2){
+  text-align:center;
+}
+.cars table tbody tr td:nth-child(3){
+  padding-left:30px;
+}
+.cars table tbody tr .bar{
+  display:inline-block;
+  width:165px;
+  height:5px;
+  margin-left:20px;
+  background-color: #dedede;
+  position:relative;
+  top:5px;
+
+}
+.cars table tbody tr .bar span{
+  display:inline-block;
+  width:140px;
+  height:5px;
+  background-color: #ec7761;
+  z-index: 1;
+  position:relative;
+  top:-8px;
 }
