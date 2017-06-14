@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script src="../echarts.min.js"></script>
+</head>
+<body>
+<h1 style="text-align: center;">公司某产品销量数据图</h1>
+<div id="main" style="width: 600px;height:400px;margin: 10px auto;"></div>
+<script type="text/javascript">
+  var myChart = echarts.init(document.getElementById('main'));
+  option = {
+    tooltip: {/*提示框*/
+      trigger: 'axis',//trigger:触发类型;axis:坐标轴触发
+      axisPointer: {
+        type: 'cross',
+        crossStyle: {
+          color: '#999',
+        }
+      }
+    },
+    toolbox: { /*右上角工具栏*/
+      feature: {
+        dataView: {show: true, readOnly: false},//数据视图
+        magicType: {show: true, type: ['line', 'bar']},//动态类型切换
+        restore: {show: true},//重置
+        saveAsImage: {show: true}//导出图片
+      }
+    },
+    legend: {
+      data:['月销量','增长率']
+    },
+    xAxis: [
+      {
+        type: 'category',
+        data: ['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月'],
+//        axisPointer: {
+//          type: 'shadow'//指示器类型
+//        }
+      }
+    ],
+    yAxis: [
+      {
+        type: 'value',
+        name: '月销量',
+        min: 0,
+        max: 100,
+        interval: 20,
+        axisLabel: {
+          formatter: '{value} 万件'
+        }
+      },
+      {
+        type: 'value',
+        name: '增长率',
+        min: 0,
+        max: 2,
+        interval: 0.2,
+        axisLabel: {
+          formatter: '{value} %'
+        }
+      }
+    ],
+    series: [
+      {
+        name:'月销量',
+        type:'bar',
+        data:[25, 30, 48, 38, 42, 55, 33, 40, 52, 62, 69, 83]
+      },
+      {
+        name:'增长率',
+        type:'line',
+        yAxisIndex: 1,//使用的 y 轴的 index，在单个图表实例中存在多个 y轴的时候有用
+        data:[1.2, 1.6, 0.8, 1.1, 1.3, 0.6, 1.2, 1.3, 1.2, 1.1, 1.2, 0.9]
+      }
+    ]
+  };
+  // 使用刚指定的配置项和数据显示图表。
+  myChart.setOption(option);
+</script>
+
+</body>
+</html>

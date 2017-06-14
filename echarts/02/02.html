@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script src="../echarts.min.js"></script>
+</head>
+<body>
+<h1 style="text-align: center;">公司产品销量数据图</h1>
+<div id="main" style="width: 600px;height:400px;margin: 10px auto;"></div>
+<script type="text/javascript">
+  var myChart = echarts.init(document.getElementById('main'));
+  option = {
+    tooltip: {
+      trigger: 'axis',
+      axisPointer: {
+        type: 'cross',
+        crossStyle: {
+          color: '#999'
+        }
+      }
+    },
+    legend: {
+      data:['A月销量','B月销量']
+    },
+    xAxis: [
+      {
+        type: 'category',
+        data: ['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月'],
+        axisPointer: {
+          type: 'shadow'
+        },
+        silent: false,//坐标轴是否是静态无法交互。
+        axisLine: {onZero: true},
+        splitLine: {show: false},
+        splitArea: {show: false}
+      }
+    ],
+    yAxis: [
+      {
+        type: 'value',
+        min: 0,
+        max: 100,
+        interval: 20,
+        inverse: true,//上下顺序颠倒
+        axisLine: {
+          show: false
+        },
+        axisLabel: {
+          formatter: '{value} 万件'
+        }
+      }
+    ],
+    series: [
+      {
+        name:'A月销量',
+        type:'bar',
+        data:[25, 30, 48, 38, 42, 55, 33, 40, 52, 62, 69, 83]
+      },
+      {
+        name:'B月销量',
+        type:'bar',
+        data:[21, 35, 42, 31, 34, 24, 35, 45, 51, 66, 66, 81]
+      }
+    ]
+  };
+  // 使用刚指定的配置项和数据显示图表。
+  myChart.setOption(option);
+</script>
+</body>
+</html>
