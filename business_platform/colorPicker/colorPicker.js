@@ -116,8 +116,8 @@ function averColor(x,y,data){
 //渲染分色彩盘
 function triangleSelect(){
   var colorY = parseInt(odrag.style.top.replace("px",""));
-  var imgData = context.getImageData(0,colorY,2,2);
-  var data = imgData.data;
+  var imgData = context.getImageData(0,colorY,2,2);  //getImageData(x,y,width,height)
+  var data = imgData.data;  //rgba
   var list=averColor(imgData.width,imgData.height,data);
   var grdt = ctx.createLinearGradient(0,0,300,0);
   grdt.addColorStop(0,"rgba(255,255,255,1)");
